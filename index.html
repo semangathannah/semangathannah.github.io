@@ -58,12 +58,18 @@
       </div>
     </div>
 
+    <audio id="mySong">
+      <source src="ItsOnlyYou.mp3" type="audio/mp3">
+    </audio>
+
     <script type="text/javascript">
+      var mySong = document.getElementById("mySong");
       function play() {
-        var audio = new Audio(
-          "https://sndup.net/tqdx/d"
-        )
-        audio.play()
+        // var audio = new Audio(
+        //   "http://sndup.net/kqqn"
+        // )
+        // audio.play()
+        mySong.play();
       }
 
       const swals = Swal.mixin({
