@@ -54,22 +54,17 @@
         <blockquote>
           <p id="text"></p>
           <p id="text2"></p>
+          <img src="image.jpg" alt="gambar" style="width: 100%; border-radius: 10px;">
         </blockquote>
       </div>
     </div>
 
-    <audio id="mySong">
-      <source src="ItsOnlyYou.mp3" type="audio/mp3">
-    </audio>
-
     <script type="text/javascript">
-      var mySong = document.getElementById("mySong");
       function play() {
-        // var audio = new Audio(
-        //   "http://sndup.net/kqqn"
-        // )
-        // audio.play()
-        mySong.play();
+        var audio = new Audio(
+          "cropMucis.mp3"
+        )
+        audio.play()
       }
 
       const swals = Swal.mixin({
@@ -89,9 +84,9 @@
 
       async function mulaitanya() {
         var { isConfirmed: tanyawal } = await swals.fire({
-          title: `Halo :D kamu bisa klik tombol dibawah ya`,
-          imageUrl: "https://i.postimg.cc/0j2LDLxP/heart-happy.gif",
-          imageWidth: 120,
+          title: `Halo Ayang, coba klik tombol dibawah ya \n Semoga suka`,
+          imageUrl: "https://media.tenor.com/UGDpyu3SbKYAAAAC/peach-cat-love.gif",
+          imageWidth: 150,
           imageHeight: 120,
           confirmButtonText: "Okay",
           allowOutsideClick: false,
@@ -111,26 +106,32 @@
           imageHeight: 120,
         })
         await swalst.fire({
-          title: "Its okay, selamat ya udah bisa lewatin semua hal dihari ini",
+          title: "Its okay, Selamat ya udah bisa lewatin semua hal dihari ini",
           imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
           imageWidth: 120,
           imageHeight: 120,
         })
         await swalst.fire({
-          title: "Jangan lupa minum ..",
+          title: "Jangan lupa minum ya ayang..",
           imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
           imageWidth: 120,
           imageHeight: 120,
         })
         await swalst.fire({
-          title: "Maaf aku hanya bisa support kamu aja &#129402;",
+          title: "Makannya juga jan lupa ayang..",
+          imageUrl: "https://media.tenor.com/7-9pd3dJTl4AAAAC/tkthao219-peach.gif",
+          imageWidth: 180,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Maaf yaa.. kakak hanya bisa support kamu aja &#129402;",
           imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
           imageWidth: 120,
           imageHeight: 120,
         })
         text = "You always be my sweetheart "
         emotnama = "&#10084;"
-        text2 = "Jaga diri baik-baik... Jangan sedih, kita ketemu nanti :) "
+        text2 = "Jaga diri baik-baik... Jangan sedih, nanti kita pasti ketemu :) "
         showDiv()
       }
       mulaitanya()
