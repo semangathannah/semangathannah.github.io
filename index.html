@@ -11,15 +11,16 @@
     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
     rel="stylesheet"
   />
+  <!-- https://hanyauntukmu.likeadream.repl.co -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <link
-    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    href="css/style.css"
     rel="stylesheet"
     type="text/css"
   />
-  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <script src="js/script.js"></script>
   <head> 
-    <title> Hello :D</title>
+    <title> Hello</title>
   </head>
   <style>
     body {
@@ -32,14 +33,12 @@
       content: "" !important;
       color: transparent !important;
     }
+    #Content {
+      display: none;
+    }
   </style>
   <body>
     <div id="bodyblur">
-      <!-- <img
-        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
-        width="100%"
-        height="100%"
-      /> -->
     </div>
 
     <div id="Content">
@@ -60,6 +59,10 @@
     </div>
 
     <script type="text/javascript">
+      function showDiv () {
+        document.getElementById('Content').style.display = 'block'
+      }
+
       function play() {
         var audio = new Audio(
           "cropMucis.mp3"
@@ -132,7 +135,8 @@
         text = "You always be my sweetheart "
         emotnama = "&#10084;"
         text2 = "Jaga diri baik-baik ya ayang... Jangan sedih, nanti kita pasti ketemu :) "
-        showDiv()
+        ketik();
+        showDiv();
       }
       mulaitanya()
     </script>
